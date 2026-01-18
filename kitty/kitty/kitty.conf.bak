@@ -1,0 +1,8 @@
+# Makes the terminal transparent
+background_opacity 0.85
+# Makes the background blurry
+background_blur 1
+
+cursor_shape beam
+cursor_beam_thickness 1.5
+cursor_blink_interval 0
