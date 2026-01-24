@@ -1,0 +1,55 @@
+# Get editor completions based on the config schema
+"$schema" = 'https://starship.rs/config-schema.json'
+
+# Move the prompt to a new line
+add_newline = true
+
+# Character: The prompt symbol
+[character]
+success_symbol = "[➜](bold green)"
+error_symbol = "[➜](bold red)"
+
+# Directory: Shows where you are
+[directory]
+truncation_length = 3
+truncation_symbol = "…/"
+style = "bold cyan"
+
+# Git Status: Shows branch and changes
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold red"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+
+# Package versions (Hidden unless relevant)
+[nodejs]
+symbol = " "
+style = "bold green"
+
+[python]
+symbol = " "
+style = "yellow bold"
+
+[rust]
+symbol = " "
+style = "bold orange"
+
+# Battery status (Shows when low)
+[battery]
+full_symbol = "󰁹 "
+charging_symbol = "󰂄 "
+discharging_symbol = "󰂃 "
+
+[[battery.display]]
+threshold = 30
+style = "bold red"
+
+# Command Duration: Tells you how long the last command took
+[cmd_duration]
+min_time = 500
+format = "took [$duration]($style) "
+
+
