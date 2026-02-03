@@ -119,6 +119,11 @@ source $ZSH/oh-my-zsh.sh
 alias ls='eza --icons --group-directories-first'
 alias ll='eza -lbF --git --icons --group-directories-first'
 alias l.='eza -a --icons'
+alias virsh='virsh -c qemu:///system'
+#Shell functions
+yesyay () {
+    yay -Syu --noconfirm
+}
 #This will allow the ctrl + backspace
 bindkey '^H' backward-kill-word
 eval "$(starship init zsh)"
