@@ -1,0 +1,33 @@
+# ~/.config/alacritty/alacritty.toml
+
+[window]
+# Transparent background
+opacity = 0.95
+# Padding around content
+padding.x = 10
+padding.y = 10
+# No window decorations for borderless look
+decorations = "none"
+
+[font]
+# Use a Nerd Font for icons
+normal.family = "CaskaydiaCove Nerd Font"
+bold.family = "CaskaydiaCove Nerd Font"
+italic.family = "CaskaydiaCove Nerd Font"
+bold_italic.family = "CaskaydiaCove Nerd Font"
+size = 12.0
+
+
+[colors]
+# OneDark theme
+primary = { background = "#282c34", foreground = "#abb2bf" }
+normal = { black = "#282c34", red = "#e06c75", green = "#98c379", yellow = "#e5c07b", blue = "#61afef", magenta = "#c678dd", cyan = "#56b6c2", white = "#abb2bf" }
+bright = { black = "#5c6370", red = "#e06c75", green = "#98c379", yellow = "#d19a66", blue = "#61afef", magenta = "#c678dd", cyan = "#56b6c2", white = "#ffffff" }
+
+[terminal.shell]
+program = "/bin/zsh"
+args = ["--login"]
+
+[selection]
+save_to_clipboard = true
+
