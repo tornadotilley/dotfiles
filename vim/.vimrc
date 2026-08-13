@@ -24,3 +24,4 @@ set softtabstop=4           " Treat 4 spaces like a tab when pressing Backspace
 set autoindent              " Copy indent from current line when starting a new one
 set smartindent             " Smart autoindenting when starting a new block
 set number
+set list

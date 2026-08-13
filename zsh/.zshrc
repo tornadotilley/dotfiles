@@ -80,13 +80,28 @@ source $ZSH/oh-my-zsh.sh
 
 # User configuration
 # ---Aliases
-# Virtualization
+### Replacing ls with the eza command
+# Core replacements
+alias ls='eza --icons=auto'                       # basic ls with icons
+alias l='eza -1 --icons=auto'                      # single column list
+alias ll='eza -l --icons=auto --git'              # long list with git status
+alias la='eza -a --icons=auto'                    # list all (including hidden)
+alias lla='eza -la --icons=auto --git'            # long list, all files with git status
+# Useful extras
+alias lt='eza --tree --level=2 --icons=auto'      # tree view (2 levels deep)
+alias lS='eza -l --sort=size --icons=auto'        # long list sorted by size
+alias lt-mod='eza -l --sort=modified --icons=auto'# long list sorted by modified date
+# Virtualization KVM
 alias virsh="virsh -c qemu:///system"
-# export MANPATH="/usr/local/man:$MANPATH"
 export LIBVIRT_DEFAULT_URI="qemu:///system"
+# Virtualization Vagrant
+export VAGRANT_DEFAULT_PROVIDER=libvirt
+# export MANPATH="/usr/local/man:$MANPATH"
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
-
+# Making the system editor vim
+export EDITOR="vim"
+export VISUAL="vim"
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
 #   export EDITOR='vim'
