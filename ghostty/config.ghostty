@@ -1,0 +1,36 @@
+shell-integration-features = no-cursor
+# Cursor Settings
+cursor-style = block
+cursor-style-blink = true
+
+
+# Background transparency and blur
+background-opacity = 0.95
+background-blur-radius = 20
+
+# Window padding
+window-padding-x = 12
+window-padding-y = 12
+
+
+# Deep Alacritty-style colors
+background = #181818
+foreground = #d8d8d8
+
+# 16-color ANSI palette (Alacritty default style)
+palette = 0=#181818
+palette = 1=#ab4642
+palette = 2=#a1b56c
+palette = 3=#f7ca88
+palette = 4=#7cafc2
+palette = 5=#ba8baf
+palette = 6=#86c1b9
+palette = 7=#d8d8d8
+palette = 8=#585858
+palette = 9=#ab4642
+palette = 10=#a1b56c
+palette = 11=#f7ca88
+palette = 12=#7cafc2
+palette = 13=#ba8baf
+palette = 14=#86c1b9
+palette = 15=#f8f8f8
