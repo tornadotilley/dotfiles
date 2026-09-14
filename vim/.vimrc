@@ -1,6 +1,7 @@
 " ==============================================================================
 " File Type Plugins & Indent Rules
 " ==============================================================================
+filetype on
 filetype plugin indent on   " Enable file type detection, plugins, and custom indents
 
 " ==============================================================================
@@ -25,3 +26,6 @@ set autoindent              " Copy indent from current line when starting a new 
 set smartindent             " Smart autoindenting when starting a new block
 set number
 set list
+syntax on
+set hlsearch                " Highlight all search results
+set incsearch               " Highlight matches *while* you type the search query
